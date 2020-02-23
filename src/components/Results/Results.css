@@ -1,0 +1,45 @@
+.results {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: 10px;
+}
+
+.results > div {
+	width: 10%;
+	font-size: large;
+	font-weight: bold;
+}
+
+.results__header {
+	width: 50%;
+	display: table;
+	background-color: lightgray;
+}
+
+.results__header > div,
+.results__content > div  {
+	display: table-cell;
+	vertical-align: middle;
+	width: 20%;
+	border: 1px solid white;
+}
+
+
+.results__content {
+	width: 50%;
+	display: table;
+}
+
+@media only screen and (max-width: 600px) {
+	.results > div,
+	.results__header,
+	.results__content {
+		width: calc(100% - 20px);
+	}
+
+	.results__header > div,
+	.results__content > div {
+		width: 30%;
+	}
+}
